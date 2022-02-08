@@ -14,3 +14,12 @@ export function createPerson(
     lastName,
   };
 }
+export function squareOf(x: any) {
+  if (typeof x === 'number') return x * x;
+  return null;
+}
+
+const squareOfTwoNumber = squareOf(2);
+
+if (squareOfTwoNumber === null) console.log('conta invalida');
+else console.log(squareOfTwoNumber ** 2);
