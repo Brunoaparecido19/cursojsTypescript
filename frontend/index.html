@@ -10,7 +10,35 @@
 </head>
 
 <body>
-
+  <main class="container">
+    <div class="container-form">
+      <form id="form">
+        <h3>Cadastro de Usuário</h3>
+        <div class="form-fields">
+          <input type="text" placeholder="Nome" id="user-name">
+          <span class="error-message">O Nome não pode está vazio</span>
+        </div>
+        <div class="form-fields">
+          <input type="text" placeholder="Sobrenome" id="last-name">
+          <span class="error-message">O Sobrenome não pode está vazio</span>
+        </div>
+        <div class="form-fields">
+          <input type="email" placeholder="E-mail" id="email">
+          <span class="error-message">O E-mail não pode está vazio</span>
+        </div>
+        <div class="form-fields">
+          <input type="password" placeholder="Senha" id="password">
+          <span class="error-message">A Senha não pode está vazio</span>
+        </div>
+        <div class="form-fields">
+          <input type="password" placeholder="Repetir Senha" id="repeat-password">
+          <span class="error-message">A Senha não pode está vazio</span>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+  <script src="./assets/js/bundle.js"></script>
 </body>
 
 </html>
