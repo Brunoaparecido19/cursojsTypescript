@@ -1,0 +1,39 @@
+:root {
+  --bg-gradient: linear-gradient(to right, #16222a, #3a6073);
+}
+
+body {
+  background: var(--bg-gradient);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container>video {
+  width: 100%;
+  max-width: 640px;
+  height: 480px;
+  position: absolute;
+  z-index: -1;
+}
+
+.container>div>button {
+  border: 0;
+  background: #1768ff;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+  opacity: 0.2;
+  margin-top: 300px;
+  margin-inline-start: 10px;
+
+}
+
+.container>div>button:hover {
+  opacity: 1;
+}

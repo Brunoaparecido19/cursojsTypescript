@@ -1,0 +1,80 @@
+:root {
+  --bg-gradient: linear-gradient(to right, #16222a, #3a6073);
+}
+
+body {
+  background: var(--bg-gradient);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-form {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 0 10px #000;
+  justify-content: center;
+}
+
+.container-form>form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.container-form>form>h3 {
+  color: #cacaca;
+}
+
+.container-form>form>div>input {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #888888;
+  transition: all 0.3s ease-out;
+  color: #888888;
+}
+
+.container-form>form>input:hover {
+  font-size: 18px;
+  transition: all 04.s ease-out;
+}
+
+.container-form>form>button {
+  margin-top: 15px;
+  color: #cacaca;
+  background: linear-gradient(to right, #1a2980, #26d0ce);
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 1s ease-out;
+}
+
+.container-form>form>button:hover {
+  background: linear-gradient(to right, #26d0ce, #1a2980);
+}
+
+.error-message {
+  font-size: 9pt;
+  padding: 5px 0;
+  color: #ff0000;
+  font-style: italic;
+  display: none;
+}
+
+.show-error-message .error-message {
+  display: block;
+}
+
+.show-error-message input[type] {
+  border-color: #ff0000;
+}
