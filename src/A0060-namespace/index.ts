@@ -1,19 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-namespace
-export namespace MeuNomeSpace {
-  const nomeDoNamespace = 'Bruno';
+// eslint-disable-next-line @typescript-eslint/triple-slash-reference
+/// <reference path="module.ts" />
 
-  export class PessoaDoNomespace {
-    constructor(public nome: string) {}
-  }
-
-  const pessoaDoNamespace = new PessoaDoNomespace(nomeDoNamespace);
-  console.log(pessoaDoNamespace);
-
-  // eslint-disable-next-line @typescript-eslint/no-namespace
-  export namespace OutroNamespace {
-    export const nomeDoNamespace = 'Gustavo';
-  }
-}
-
-const pessoaDoNamespace = new MeuNomeSpace.PessoaDoNomespace('outro nomespace');
-console.log(pessoaDoNamespace);
+console.log(MeuNomeSpace.nomeDoNamespace);
